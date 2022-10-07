@@ -1,7 +1,10 @@
+<script>
+  import Logo from '@/assets/images/logo.png'
+</script>
 <div class="container-login">
   <div class="wrap-login">
     <div class="form">
-      <div class="logo"></div>
+      <img class="logo" src={Logo} alt="logo">
       <div class="name">后台管理系统</div>
       <div class="wrap-input100 validate-input" data-validate = "Enter username">
         <input class="input100" autocomplete="off" type="text" name="username" placeholder="用户名">
@@ -23,6 +26,15 @@
 </div>
 
 <style lang="postcss">
+  .logo {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    pointer-events: none;
+    user-select: none;
+  }
   .container-login {
     background-image: url(@/assets/images/bg.jpg);
     background-repeat: no-repeat;
